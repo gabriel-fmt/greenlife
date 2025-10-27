@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — GreenLife</title>
+  <meta name="description" content="Formulário de cadastro para voluntariado e doações na GreenLife.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="img/logo.svg" alt="GreenLife" class="logo"></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Cadastro</h2>
+    <p>Preencha seus dados para se tornar voluntário ou apoiador. Campos obrigatórios marcados com <abbr title="Obrigatório">*</abbr>.</p>
+
+    <form id="form-cadastro" class="form" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <label for="nome">Nome completo *</label>
+        <input id="nome" name="nome" type="text" required minlength="3">
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="cpf">CPF *</label>
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required>
+
+        <label for="telefone">Telefone *</label>
+        <input id="telefone" name="telefone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" required>
+
+        <label for="nascimento">Data de Nascimento *</label>
+        <input id="nascimento" name="nascimento" type="date" required>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP *</label>
+        <input id="cep" name="cep" type="text" inputmode="numeric" placeholder="00000-000" required>
+
+        <label for="endereco">Endereço</label>
+        <input id="endereco" name="endereco" type="text">
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text">
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+          <option value="BA">BA</option>
+        </select>
+      </fieldset>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">Enviar</button>
+        <button class="btn outline" type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; GreenLife</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
